@@ -1,0 +1,6 @@
+apiVersion: data.fluid.io/v1alpha1
+kind: Dataset
+metadata:
+  name: dataset-sample
+spec:
+  # TODO(user): Add fields here
