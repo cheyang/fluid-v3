@@ -1,0 +1,6 @@
+apiVersion: data.fluid.io/v1alpha1
+kind: DataBackup
+metadata:
+  name: databackup-sample
+spec:
+  # TODO(user): Add fields here

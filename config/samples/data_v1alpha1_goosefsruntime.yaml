@@ -1,0 +1,6 @@
+apiVersion: data.fluid.io/v1alpha1
+kind: GooseFSRuntime
+metadata:
+  name: goosefsruntime-sample
+spec:
+  # TODO(user): Add fields here

@@ -9,6 +9,84 @@ rules:
 - apiGroups:
   - data.fluid.io
   resources:
+  - alluxioruntimes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - alluxioruntimes/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - alluxioruntimes/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - databackups
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - databackups/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - databackups/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - dataloads
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - dataloads/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - dataloads/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
   - datasets
   verbs:
   - create
@@ -28,6 +106,84 @@ rules:
   - data.fluid.io
   resources:
   - datasets/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - goosefsruntimes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - goosefsruntimes/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - goosefsruntimes/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - jindoruntimes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - jindoruntimes/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - jindoruntimes/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - juicefsruntimes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - juicefsruntimes/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - juicefsruntimes/status
   verbs:
   - get
   - patch

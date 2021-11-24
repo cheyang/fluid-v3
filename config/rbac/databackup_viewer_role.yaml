@@ -1,0 +1,20 @@
+# permissions for end users to view databackups.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: databackup-viewer-role
+rules:
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - databackups
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - data.fluid.io
+  resources:
+  - databackups/status
+  verbs:
+  - get
