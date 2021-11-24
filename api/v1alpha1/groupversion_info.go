@@ -1,5 +1,4 @@
 /*
-Copyright 2021.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -15,8 +14,8 @@ limitations under the License.
 */
 
 // Package v1alpha1 contains API Schema definitions for the data v1alpha1 API group
-//+kubebuilder:object:generate=true
-//+groupName=data.fluid.io
+// +kubebuilder:object:generate=true
+// +groupName=data.fluid.io
 package v1alpha1
 
 import (
@@ -24,9 +23,14 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/scheme"
 )
 
+const (
+	Group   = "data.fluid.io"
+	Version = "v1alpha1"
+)
+
 var (
 	// GroupVersion is group version used to register these objects
-	GroupVersion = schema.GroupVersion{Group: "data.fluid.io", Version: "v1alpha1"}
+	GroupVersion = schema.GroupVersion{Group: Group, Version: Version}
 
 	// SchemeBuilder is used to add go types to the GroupVersionKind scheme
 	SchemeBuilder = &scheme.Builder{GroupVersion: GroupVersion}
